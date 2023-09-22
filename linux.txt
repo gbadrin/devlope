@@ -1,0 +1,386 @@
+Linux Interview Questions
+
+1.What is Linux
+Linux® is an open source operating system (OS). An operating system is the software that directly manages a system’s hardware and resources, like CPU, memory, and storage.
+The OS sits between applications and hardware and makes the connections between all of your software and the physical resources that do the work.
+
+Core components of Linux
+
+kernel − Kernel is the core part of Linux. It is responsible for all major activities of this operating system. It consists of various modules and it interacts directly with the underlying hardware. Kernel provides the required abstraction to hide low level hardware details to system or application programs.
+
+System Library − System libraries are special functions or programs using which application programs or system utilities accesses Kernel's features. These libraries implement most of the functionalities of the operating system and do not requires kernel module's code access rights.
+
+System Utility − System Utility programs are responsible to do specialized, individual level tasks.
+what is kernel and how it works
+what  is system utility 
+what is system library
+
+2.basic features of Linux
+
+Multiuser capability: Multiple users can access the same system resources like memory, hard disk, etc. But they have to use different terminals to operate.
+
+Multitasking: More than one function can be performed simultaneously by dividing the CPU time intelligently.
+
+Portability: Portability doesn't mean it is smaller in file size or can be carried in pen drives or memory cards. It means that it support different types of hardware.
+
+Security: It provides security in three ways namely authenticating (by assigning password and login ID), authorization (by assigning permission to read, write and execute) and encryption (converts file into an unreadable format).
+
+Live CD/USB: Almost all Linux distros provide live CD/USB so that users can run/try it without installing it.
+
+Graphical User Interface (X Window system): Linux is command line based OS but it can be converted to GUI based by installing packages.
+
+Support's customized keyboard: As it is used worldwide, hence supports different languages keyboards.
+
+Application support: It has its own software repository from where users can download and install many applications.
+
+File System: Provides hierarchical file system in which files and directories are arranged.
+
+Open Source: Linux code is freely available to all and is a community based development project.
+
+3.what are kernel features 
+
+To establish communication between user level application and hardware.
+To decide state of incoming processes.
+To control disk management.
+To control memory management.
+To control task management
+
+4.what are the advantages and disadvantages of linux
+
+Advantages of Linux
+
+1. Linux is open-source
+2. Secure
+3. Efficient
+4. Easy to use
+5. Multitasking
+6. Low Hardware requirementsHighly Secure
+Stable
+Free and Open Source
+Easy to use
+Absolute Freedom over your system
+High Performance
+Proper use of System Resources
+Privacy-Friendly
+Easily Install Software
+Better Software Updates
+
+
+Disadvantages of Linux
+
+Difficult to Troubleshoot
+Poor Support for Games
+Almost all the hardwares can be connected to a Linux operating system(Hardware Compatibility)
+it lacks on the side of technical support
+
+
+5.basic components of Linux 
+
+Kernel – Kernel is the core part of Linux. It is responsible for all major activities of this operating system. It is consists of various modules and it interacts directly with the underlying hardware. Kernel provides the required abstraction to hide low level hardware details to system or application programs.
+System Library – System libraries are special functions or programs using which application programs or system utilities accesses Kernel’s features. These libraries implements most of the functionalities of the operating system and do not requires kernel module’s code access rights.
+System Utility – System Utility programs are responsible to do specialized, individual level tasks.
+ 
+6.file permissions types in linux
+
+Read (r) : The read permission allows you to open and read the content of a file. ...
+Write (w) : The write permission allows you to edit, remove or rename a file. ...
+Execute (x): In Unix type system, you can't run or execute a program unless execute permission is set.
+
+7.what is redirection
+
+The work of any command is either taking input or gives an output or both. 
+So, Linux has some command or special character to redirect these input and output functionalities.
+
+8.about root account
+
+The root is the user name or account that by default has access to all commands and files on a Linux or other Unix-like operating system.
+
+9.process states in linux
+
+While these processes exist, they'll be in one of the five possible states:
+Running or Runnable (R)
+Uninterruptible Sleep (D)
+Interruptable Sleep (S)
+Stopped (T)
+Zombie (Z)
+
+10.process Management in 
+
+A process means program in execution. It generally takes an input, processes it and gives us the appropriate output. 
+
+How to find out the memory usage using command
+
+Type the following command: systeminfo.
+
+11.What are symbolic links
+
+A symlink is a symbolic Linux/ UNIX link that points to another file or folder on your computer, or a connected file system. 
+This is similar to a Windows shortcut
+. Symlinks can take two forms: Soft links are similar to shortcuts, and can point to another file or directory in any file system.
+
+12.How we change permissions under linux
+
+using chmod .To change directory permissions in Linux, use the following:
+chmod +rwx filename to add permissions
+chmod -rwx directoryname to remove permissions. 
+chmod +x filename to allow executable permissions.
+chmod -wx filename to take out write and executable permissions.
+Note that “r” is for read, “w” is for write, and “x” is for execute.
+0= no permission
+1=execute
+2=write
+4=read
+upto range is 777
+
+13.what are the filenames preceding with the dots
+
+In general, filenames that are preceded by a dot are hidden files. These files can be configuration files that hold important data or setup info.
+
+14.what is pwd command 
+
+present working directory
+
+15.Different modes in vi editor
+
+They are divided into three main parts:
+
+Command Mode
+Insert Mode
+Escape Mode
+colon mode
+ 
+16.what is grep command
+
+The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern.
+
+17.How to terminate the on going process 
+
+How to Terminate a Process ( kill )
+(Optional) To terminate the process of another user, become superuser or assume an equivalent role.
+Obtain the process ID of the process that you want to terminate. $ ps -fu user. ...
+Terminate the process. $ kill [ signal-number ] pid. ...
+Verify that the process has been terminated.
+
+18.How to execute more than one command from single command line entry
+
+command that display all text files
+
+There are 3 ways to run multiple shell commands in one lin
+1) Use ;2) Use &&3) Use ||
+
+19.How to find the status of the process
+
+You can use the ps command to find out which processes are running and display information about those processes.
+ The ps command has several flags that enable you to specify which processes to list and what information to display about each process
+.
+20.how to find a file using the terminal
+
+Use find from the command line to locate a specific file by name or extension.
+
+21.how to create a folder in the terminal
+
+using mkdir command 
+mkdir dirname
+
+22.How to enable the curl and use of the curl command
+
+curl command is a tool to download or transfer files/data from or to a server using FTP, HTTP, HTTPS, SCP, SFTP, SMB 
+and other supported protocols on Linux or Unix-like system.os system is Linux based on
+can we able to edit the linux. 
+
+23.How to remove the passwd for the group
+
+r, –remove-password : It is used to remove the password from the named group.
+
+24. What is the root account in linux 
+
+The root account is the special user in the /etc/passwd file with the user ID (UID) of 0 and is commonly given the user name, root.
+ It is not the user name that makes the root account so special, but the UID value of 0 . 
+This means that any user that has a UID of 0 also has the same privileges as the root user.
+
+25.How to create the new user without logging in as root
+using user management commands
+sudo useradd username
+sudo useradd -D
+sudo passwd username
+
+26.Difference b/w Home and working directory 
+
+Home directory is the default working directory when a user logs in.
+ On the other hand, working directory is the user's current directory. 
+Working directory can be changed. It can be changed using cd command.
+
+27.How to remove the libraries in linux
+You can delete libraries by issuing the DELETE LIBRARY command
+
+28.Mention some file content commands
+Commands	Function
+head	It displays the beginning of a file.
+tail	It displays the last last part of a file.
+cat	This command is versatile and multi worker.
+tac	Opposite of cat.
+more	Command line diaplays contents in pager form that is either in more format.
+less	Command line diaplays contents in pager form that is either in less format.
+
+29.what are the admin commands in Linux
+
+man	Display information about all commands
+uptime	Show how long system is running
+users	Show username who are currently logged in
+service	Call and execute script
+pkill	Kill a process
+pmap	Memory map of a process
+wget	Download file from network
+ftp or sftp	Connect remote ftp host
+free	Show memory status
+top	Display processor activity of system
+last	Display user's activity in the system
+ps	Display about processes running on the system
+Shutdown commands	Shutdown and reboot system
+info	Display information about given command
+env	Display environment variable for currently logged-in user
+netstat	Display network status
+arp	Check ethernet connectivity and IP address
+df	Display filesystem information
+du	Display usage
+init	Allow to change server bootup
+nano	A command line editor
+nslookup	Check domain name and IP information
+shred	Delete a file by over writing its content
+cat	Display, copy or combine text files
+pwd>	Print path of current working directory
+locate	Finding files by name on system
+chown	Change ownership of a file
+>alias	To short a command
+echo	Display text
+cmp	Compare two files byte by byte
+mount	Mount a filesystem
+ifconfig	Display configuration
+traceroute>	Trace existing network
+sudo	Run a command as a root user
+route	List routing table for your server
+ping	Check connection by sending packet test packet
+find	Find location of files/directories
+users	Show current logged in user
+who	Same as w but doesn't show current process
+ls	List all the files
+tar	Compress directories
+grep	Search for a string in a file
+su	Switch from one to another user
+awk	Search lines for a given pattern
+
+29.How to move in to one directory in terminal
+
+o change this current working directory, you can use the "cd" command (where "cd" stands for "change directory").
+
+30.which shells are used in linux
+
+The Bourne Shell (sh) Developed at AT&T Bell Labs by Steve Bourne, the Bourne shell is regarded as the first UNIX shell ever. ...
+The GNU Bourne-Again Shell (bash) ...
+The C Shell (csh) ...
+The Korn Shell (ksh) ...
+The Z Shell (zsh)
+ 
+31.Different process states in Linux
+
+There are five Linux process states. They are as follows:
+ running & runnable, interruptable_sleep, uninterruptable_sleep, stopped, and zombie.09-
+
+32.what is cli and guiGUI lets a user interact with the device/system with the help of graphical elements, like windows, menus, icons, etc. 
+The CLI, on the other hand, lets a user interact with their device/system with the help of various commands.
+ Some OS provide their users with only CLI, while some offer both CLI and GUI.
+
+33.what are the protocol and types of protocols
+
+There are three main types of network protocols.
+ These include network management protocols, network communication protocols and network security protocols:
+
+Communication protocols include basic data communication tools like TCP/IP and HTTP.
+Management protocols maintain and govern the network through protocols such as ICMP and SNMP. 
+Security protocols include HTTPS, SFTP, and SSL
+port number and their works
+
+34.How to lock an user account
+
+To lock a user account use the command usermod -L or passwd -l
+
+35.where are the log files stored in linux
+
+Linux has a special directory for storing logs called /var/log . 
+This directory contains logs from the OS itself, services, and various applications running on the system.
+
+36.different ways to verify that a package is installed or not
+a) Using which command
+.b) Using whereis command
+1.c) Using locate command
+
+37.which linux service is used as database server
+
+MariaDB is a database server that can efficiently use resources and process user commands.
+ It operates on many computing systems, including Mac, Windows and Linux. 
+MariaDB offers both various features, such as ways to encrypt your stored data.
+
+37.what is gpl means
+
+The GNU General Public License (GNU, GPL, or GPL) is a free software license originally written by Richard Stallman
+ of the Free Software Foundation, which guarantees that users are free to use, share, 
+and modify the software without paying anyone for it.
+
+38.what is load average in Linux 
+
+Load Average in Linux is a metric that is used by Linux users to keep track of system resources
+. It also helps you monitor how the system resources are engaged. While
+ Load Average is one of the most fundamental metrics of resource usage, 
+the metric is pointless unless you understand what it tells a user.
+
+39.How to check which ports are listening in my linux server
+
+Open a Linux terminal application
+Use ss command to display all open TCP and UDP ports in Linux.
+Another option is to use the netstat command to list all ports in Linux.
+Apart from ss/netstat one can use the lsof command to list open files and ports on Linux based system.
+Finally, one can use nmap command to check TCP and UDP ports too.
+
+40.where kernel modules are located
+
+they are located in /lib/modules or /usr/lib/modules and have had the extensio
+
+41.Describe the types of commands
+1.file commands
+2.file content commands
+3.directory commands
+4.admin commands
+5.utility commands
+6.user management commands
+7.networking commands
+
+
+42.explain the every command clearly one after the other
+
+43.Linux directory structures 
+
+These are the common top-level directories associated with the root directory:
+/bin – binary or executable programs.
+/etc – system configuration files.
+/home – home directory. ...
+/opt – optional or third-party software.
+/tmp – temporary space, typically cleared on reboot.
+/usr – User related programs.
+/var – log files.
+
+44.what are the stages of the boot process 
+
+Six steps of the booting process are BIOS and Setup Program, The Power- On-Self-Test (POST), 
+The Operating system Loads, System Configuration, System Utility Loads and Users Authentication.
+
+45.what is /etc/passwd file
+
+Traditionally, the /etc/passwd file is used to keep track of every registered user that has access to a system. 
+The /etc/passwd file is a colon-separated file that contains the following information: User name. Encrypted password. User ID number (UID)
+
+46.load average in Linux 
+
+Load Average in Linux is a metric that is used by Linux users to keep track of system resources. 
+It also helps you monitor how the system resources are engaged. 
+While Load Average is one of the most fundamental metrics of resource usage,
+ the metric is pointless unless you understand what it tells a user.03-Aug-2022
